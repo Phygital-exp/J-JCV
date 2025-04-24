@@ -89,10 +89,8 @@ function copyToClipboard(text) {
 }
 
 // Modo Oscuro
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("darkModeToggle").addEventListener("click", () => {
+document.getElementById("darkModeToggle").addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
-  });
 });
 
 // Cargar datos al inicio

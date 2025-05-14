@@ -69,7 +69,7 @@ function renderResults(results) {
                         <li><strong>Canal:</strong> ${result.CANAL || 'N/A'}</li>
                         <li><strong>Subcanal:</strong> ${result.SUBCANAL || 'N/A'}</li>
                         <li><strong>Departamento:</strong> ${result.DEPARTAMENTO || 'N/A'}</li>
-                        <li><strong>Ciudad:</strong> ${result.Ciudad || 'N/A'}</li>
+                        <li><strong>Ciudad:</strong> ${result.CIUDAD || 'N/A'}</li>
                     </ul>
                 </div>
             `;

@@ -26,7 +26,7 @@ async function loadData() {
 // Inicializar Fuse.js para búsqueda rápida
 function initializeFuse() {
     const options = {
-        keys: ['SAP','PDV','CORPORATIVO','FORMATO'],
+        keys: ['ID_INVOLVES','PDV','CORPORATIVO','FORMATO'],
         threshold: 0.3,
     };
     fuse = new Fuse(fullData, options);
@@ -61,8 +61,8 @@ function renderResults(results) {
                 <div class="result-item">
                     <h3>${result.PDV}</h3>
                     <ul>
-                        <li><strong>ID_Involves:</strong> ${result.SAP || 'N/A'}
-                        <i class="material-icons copy-icon" onclick="copyToClipboard('${result.SAP}')">content_copy</i>
+                        <li><strong>ID_Involves:</strong> ${result.ID_INVOLVES || 'N/A'}
+                        <i class="material-icons copy-icon" onclick="copyToClipboard('${result.ID_INVOLVES}')">content_copy</i>
                         </li>
                         <li><strong>Corporativo:</strong> ${result.CORPORATIVO || 'N/A'}</li>
                         <li><strong>Formato:</strong> ${result.FORMATO || 'N/A'}</li>

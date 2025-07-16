@@ -61,7 +61,7 @@ function renderResults(results) {
                 <div class="result-item">
                     <h3>${result.PDV}</h3>
                     <ul>
-                        <li><strong>ID_Involves:</strong> ${result.ID_INVOLVES || 'N/A'}
+                        <li><strong>ID_Involves:</strong> ${result.SAP || 'N/A'}
                         <i class="material-icons copy-icon" onclick="copyToClipboard('${result.ID_INVOLVES}')">content_copy</i>
                         </li>
                         <li><strong>Corporativo:</strong> ${result.CORPORATIVO || 'N/A'}</li>

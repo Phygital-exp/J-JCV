@@ -2,7 +2,7 @@ let debounceTimer;
 let fuse = null;
 let fullData = [];
 
-const API_URL = 'https://j-jcv-production.up.railway.app/api/jyj/pdv';
+const API_URL = 'https://jyjcv-production.up.railway.app/api/jyj/pdv';
 
 // Cargar los datos de la API
 async function loadData() {

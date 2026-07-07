@@ -29,4 +29,4 @@ app.get("/api/jyj/pdv", async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en puerto ${PORT}`);
-});
+}); 
